@@ -5,6 +5,7 @@ option go_package = "/generated/user";
 package user;
 
 service UserService {
+    rpc CreateUser(User) returns (Status){}
     rpc GetUser(UserId) returns (User) {}
     rpc UpdateUser(User) returns (Status) {}
     rpc DeleteUser(UserId) returns (Status) {}
