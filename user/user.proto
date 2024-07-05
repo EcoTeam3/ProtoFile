@@ -13,7 +13,7 @@ service UserService {
     rpc UpdateUserProfile(UserProfile) returns (Status) {}
 }
 
-message UserId {
+message UserId { 
     string UserId = 1;
 }
 
